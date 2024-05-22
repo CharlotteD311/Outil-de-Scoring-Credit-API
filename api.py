@@ -10,7 +10,7 @@ import uvicorn
 
 app = FastAPI()
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Chemins relatifs pour les fichiers de modèle et de données
 best_model_path = os.path.join(BASE_DIR, "Models", "best_model.pkl")
