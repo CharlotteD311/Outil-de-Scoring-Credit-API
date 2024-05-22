@@ -1,0 +1,39 @@
+name: Deploy API to Heroku
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          cd API
+          pip install -r requirements.txt
+          
+
+#      - name: Deploy to Heroku
+#        env:
+#          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+#          HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
+#        run: |
+#          echo "machine api.heroku.com login $HEROKU_EMAIL password $HEROKU_API_KEY" > ~/.netrc
+#          echo "machine git.heroku.com login $HEROKU_EMAIL password $HEROKU_API_KEY" >> ~/.netrc
+#          chmod 600 ~/.netrc
+#          heroku auth:token
+#          git config --global user.email "charlottedubus311@icloud.com"
+#          git config --global user.name "CharlotteD311"
+#          git pull --rebase https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git main
+#          git push https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git HEAD:main
