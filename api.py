@@ -58,7 +58,7 @@ async def predict(data: DynamicClientInput):
         else:
             proba = model.predict(input_df)[0] * 100
 
-        pred = 0 if proba < 60 else 1  # Seuil optimal
+        pred = 0 if proba < 0.52 else 1  # Seuil optimal
 
         # Calcul des valeurs SHAP pour l'entrée donnée
         shap_values = explainer(input_df)
