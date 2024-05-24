@@ -21,7 +21,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          
+
+      - name: Run Unit Tests
+        run: |
+          pytest test_api.py 
 
 #      - name: Deploy to Heroku
 #        env:

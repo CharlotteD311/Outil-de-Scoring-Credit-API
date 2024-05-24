@@ -11,3 +11,4 @@ plotly==5.22.0
 streamlit===1.34.0
 evidently==0.4.22
 lightgbm==4.3.0
+pytest== 8.2.0
