@@ -26,8 +26,8 @@ Pour encadrer tout cela, nous avons adopté une approche globale MLOps. Cela com
 - `requirements.txt`: Liste toutes les dépendances Python nécessaires pour exécuter le projet.
 
 - `runtime.txt`: Spécifie la version de Python utilisée, principalement pour les environnements Heroku.
-- 
-- - `Procfile`:Fichier nécessaire pour le déploiement sur Heroku.
+
+- `Procfile`:Fichier nécessaire pour le déploiement sur Heroku.
 
 
 Les fichiers avec les packages utilisés pour l'ensemble du projet s'intitulent : requierements.txt.  
