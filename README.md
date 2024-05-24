@@ -28,6 +28,12 @@ Pour encadrer tout cela, nous avons adopté une approche globale MLOps. Cela com
 - `runtime.txt`: Spécifie la version de Python utilisée, principalement pour les environnements Heroku.
 
 
-Les fichiers avec les packages utilisés pour l'ensemble du projet s'intitulent : requierements.txt.
-Nous retrouvons celui pour l'API dans le repository : https://github.com/CharlotteD311/scoring-credit-api
-Celui pour l'interface Streamlit dans le repository : https://github.com/CharlotteD311/scoring-credit-streamlit
+Les fichiers avec les packages utilisés pour l'ensemble du projet s'intitulent : requierements.txt.  
+Nous retrouvons celui pour l'API dans le repository : https://github.com/CharlotteD311/scoring-credit-api  
+Celui pour l'interface Streamlit dans le repository : https://github.com/CharlotteD311/scoring-credit-streamlit  
+
+Lien vers l'API : https://my-app-scoring-api-660b74752f36.herokuapp.com/docs  
+
+Lien vers l'interface Streamlit : https://my-app-scoring-streamlit-bb69bfa86cbc.herokuapp.com/
+
+*Ce projet a été développé dans le cadre de la formation de Data Scientist chez OpenClassRooms. Actuellement, ce projet est fourni à des fins éducatives et de démonstration.*
