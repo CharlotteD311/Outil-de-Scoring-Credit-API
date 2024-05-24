@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from API.api import app
+from api import app
 import pandas as pd
 import os
 
