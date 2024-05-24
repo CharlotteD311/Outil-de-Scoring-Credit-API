@@ -6,11 +6,10 @@ import os
 client = TestClient(app)
 
 # Définir le répertoire de travail à la racine du projet
-current_dir = os.path.dirname(os.path.abspath(__file__))
-root_dir = os.path.abspath(os.path.join(current_dir, ".."))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Chemin vers les données de test
-data_path = os.path.join(root_dir, "Data", "test_selected_data.csv")
+data_path = os.path.join(BASE_DIR, "Data", "test_selected_data.csv")
 
 def test_predict():
     # Chargement des données de test
